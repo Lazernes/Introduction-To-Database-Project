@@ -1,0 +1,56 @@
+<!--@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>로파모</title>
+  <link rel="stylesheet" href="../css/enroll_char.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p onclick="location.href='/'">
+        <img src="/img/로파모.jpg" alt="Click me" width="100">
+      </p>
+    </div>
+    <nav id="topMenu">
+        <ul>
+          <li><a class="menuLink" href="/party_data_Legend">군단장 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Urbis">어비스 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Kazeros">카제로스 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Epic">에픽 레이드</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="enroll_box">
+      <form action="/char_data" method="post">
+      <p>
+        캐릭터이름: <input type="text" name="name" placeholder="캐릭터이름">
+      </p>
+      <p>
+        아이템레벨: <input type="text" name="level" placeholder="아이템레벨">
+      </p>
+      <p>
+        평균보석레벨: <input type="text" name="gem_level" placeholder="9.5">
+      </p>
+      <p>
+        엘릭서: <input type="text" name="elixir" placeholder="회심 40">
+      </p>
+      <p>
+        초월단계합: <input type="text" name="transcendence" placeholder="60">
+      </p>
+      <p>
+        악마계열추가피해: <input type="text" name="Devil" placeholder="6.01">
+      </p>
+      <p>
+        <input type="submit">
+      </p>
+      </form>
+    </div>
+    
+  </main>
+</body>
+</html>

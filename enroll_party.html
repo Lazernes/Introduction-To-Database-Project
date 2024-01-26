@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>로파모</title>
+  <link rel="stylesheet" href="../css/enroll_char.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p onclick="location.href='/'">
+        <img src="/img/로파모.jpg" alt="Click me" width="100">
+      </p>
+    </div>
+    <nav id="topMenu">
+        <ul>
+          <li><a class="menuLink" href="/party_data_Legend">군단장 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Urbis">어비스 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Kazeros">카제로스 레이드</a></li>
+          <li><a class="menuLink" href="/party_data_Epic">에픽 레이드</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="enroll_box">
+      <form action="/party_data" method="post">
+      <p>
+        레이드종류: <input type="text" name="Raid_Select" placeholder="군단장레이드">
+      </p>
+      <p>
+        레이드: <input type="text" name="Raid" placeholder="카멘">
+      </p>
+      <p>
+        공대장이름: <input type="text" name="captain_name" placeholder="공대장이름">
+      </p>
+      <p>
+        공격대 평균 레벨: <input type="text" name="party_level" placeholder="공격대 평균 레벨">
+      </p>
+      <p>
+        현재 공격대 인원: <input type="text" name="cur_num" placeholder="현재 공격대 인원">
+      </p>
+      <p>
+        선호 직업: <input type="text" name="pref" placeholder="선호 직업">
+      </p>
+      <p>
+        <input type="submit">
+      </p>
+      </form>
+    </div>
+    
+  </main>
+</body>
+</html>

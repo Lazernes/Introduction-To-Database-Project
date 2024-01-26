@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title 로파모
+    link(rel ='stylesheet', href='/css/view.css')
+  body
+    header 
+      #container 
+        //input(type="button", value="로파모", onclick="location.href='/'") 
+        a(href="/")
+          img(src="/img/로파모.jpg", alt="Click me" width="100")
+
+      nav#topMenu 
+        ul 
+          li
+            a.menuLink(href='/party_data_Legend') 군단장 레이드           
+          li
+            a.menuLink(href='/party_data_Urbis') 어비스 레이드
+          li
+            a.menuLink(href='/party_data_Kazeros') 카제로스 레이드
+          li
+            a.menuLink(href='/party_data_Epic') 에픽 레이드
+
+      .view_box
+        p
+          등록된캐릭터
+        table 
+          tr
+            th 캐릭터이름
+            th 아이템레벨
+            th 평균보석레벨
+            th 엘릭서
+            th 초월
+            th 악마계열추가피해
+          each char_data in char_datas
+            tr
+              td 
+                a= char_data.name
+              td
+                a= char_data.level
+              td
+                a= char_data.gem_level 
+              td 
+                a= char_data.elixir 
+              td 
+                a= char_data.transcendence
+              td 
+                a= char_data.Devil
+            
+        //- form(action='/char_data/'+char_data.name+'/delete' method='post')
+        //-   input(type = 'submit' value='삭제하기')
+        //- a(href='/char_data/new') add character
+          
+
+    //-     ul
+        
+    //-       li
+    //-         a(href ='/char_data/'+char_data.name)= char_data.name
